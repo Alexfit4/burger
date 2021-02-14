@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             devoured: newSleep,
           };
   
-          fetch(`/api/cats/${id}`, {
+          fetch(`/api/burgers/${id}`, {
             method: 'PUT',
             headers: {
               Accept: 'application/json',
@@ -44,20 +44,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   
     // CREATE
-    const createCatBtn = document.getElementById('create-form');
+    const createDevouredBtn = document.getElementById('create-form');
   
-    if (createCatBtn) {
-      createCatBtn.addEventListener('submit', (e) => {
+    if (createDevouredBtn) {
+      createDevouredBtn.addEventListener('submit', (e) => {
         e.preventDefault();
   
         // Grabs the value of the textarea that goes by the name, "quote"
         const newCat = {
           name: document.getElementById('ca').value.trim(),
-          sleepy: document.getElementById('sleepy').checked,
+          sleepy: document.getElementById('devoured').checked,
         };
   
         // Send POST request to create a new quote
-        fetch('/api/cats', {
+        fetch('/api/burgers', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
