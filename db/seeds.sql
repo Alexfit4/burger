@@ -1,9 +1,9 @@
 USE burgers_db;
 
 INSERT INTO
-    burgers (burger_name)
+    burgers (burger_name, devoured)
 VALUES
-    ('The Original Burger'),
-    ('Whiskey King Burger'),
-    ('The Company Burger'),
-    ('Deep-Fried Burger');
+    ('The Original Burger', true),
+    ('Whiskey King Burger', true),
+    ('The Company Burger', false),
+    ('Deep-Fried Burger', true);
