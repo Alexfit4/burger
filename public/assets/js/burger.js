@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   if (changeDevourBtn) {
     changeDevourBtn.forEach((button) => {
       button.addEventListener('click', (e) => {
-        
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute('data-id');
         const newBurger = e.target.getAttribute('data-newBurger');
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const newBurgerState = {
           devoured: newBurger,
         };
-        
+       
 
         fetch(`/api/burgers/${id}`, {
           method: 'PUT',
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     
     });
-    button.remove()
+    
   }
   
 
