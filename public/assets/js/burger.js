@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute('data-id');
         const newBurger = e.target.getAttribute('data-newBurger');
-        const status = e.target.getAttribute('data-newBurger');
         const newBurgerState = {
           devoured: newBurger,
         };
@@ -85,10 +84,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   // DELETE
-  const deleteCatBtns = document.querySelectorAll('.delete-burger');
+  const deleteBurgerBtn = document.querySelectorAll('.delete-burger');
 
   // Set up the event listeners for each delete button
-  deleteCatBtns.forEach((button) => {
+  deleteBurgerBtn.forEach((button) => {
     button.addEventListener('click', (e) => {
       const id = e.target.getAttribute('data-id');
 
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       fetch(`/api/burgers/${id}`, {
         method: 'DELETE',
       }).then((res) => {
-        console.log(res);
         console.log(`Deleted burger: ${id}`);
 
         // Reload the page
