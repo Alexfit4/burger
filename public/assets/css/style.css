@@ -1,18 +1,10 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+
+h1 {
+  margin: auto;
+  width: 30%;
+  padding-bottom: 10px;
 }
 
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
 
 .form-group {
   margin-bottom: 5px;
@@ -28,4 +20,19 @@ body {
 .hero {
   background-color: #faebd7;
  
+}
+
+/* .formList {
+  text-align: center;
+} */
+
+li {
+  padding-bottom: 10px;
+}
+
+ .formList{
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+  
 }
