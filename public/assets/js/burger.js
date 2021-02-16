@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // UPDATE
   const changeDevourBtn = document.querySelectorAll('.change-devoured');
 
+  
+
   // Set up the event listener for the create button
   if (changeDevourBtn) {
     changeDevourBtn.forEach((button) => {
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute('data-id');
         const newBurger = e.target.getAttribute('data-newBurger');
-
+        const status = e.target.getAttribute('data-newBurger');
         const newBurgerState = {
           devoured: newBurger,
         };
@@ -34,8 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      
           // Check that the response is all good
           // Reload the page so the user can see the new quote
-          if (response.ok) {
-            console.log(`changed devoured to: ${newBurger}`);
+          if (response.ok) {            
             location.reload('/');
 
           } else {
