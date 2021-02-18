@@ -1,6 +1,6 @@
 # Burger-Logger
 - My  Github Repo: https://github.com/Alexfit4/burger
-- Burger-Logger Deployed Link: https://alexfit4.github.io/burger/
+- Burger-Logger Deployed Link: https://pure-scrubland-18863.herokuapp.com/index
 
 # Description:
 - Burger logger app using node and MySql.
